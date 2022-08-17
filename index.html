@@ -514,57 +514,78 @@
     </footer>
 
     <div class="backdrop is-hidden" data-modal>
+
       <div class="modal">
 
-      <button type="button" class="button-modal" data-modal-close>
-        <svg width="11" height="11">
-          <use href="./images/icons.svg#icon-modal"></use>
-        </svg>
-      </button>
+          <button type="button" class="button-modal" data-modal-close>
+            <svg width="11" height="11">
+              <use href="./images/icons.svg#icon-modal"></use>
+            </svg>
+          </button>
 
+        <form name="call_back">
           <div class="form-modal">
-            <form name="call_back">
-              <h2>Залиште свої дані, ми вам передзвонимо</h2>
 
-              <div>
-                  <label>
-                    Ім'я
-                    <input type="text" name="username" />
-                  </label>
-              </div>
-              <div>
-                  <label>
-                    Телефон
-                    <input type="tel" name="tel" />
-                  </label>
-              </div>
-              <div>
-                  <label>
-                    Пошта
-                    <input type="email" name="mail" />
-                  </label>
-              </div>
+              <h2 class="form-title">Залиште свої дані, ми вам передзвонимо</h2>
 
-              <div>
-                <label>
-                  Пошта
-                  <textarea name="comment" placeholder="Введіть текст"></textarea>
-                </label>
+              <div class="form-group">
+                  <label class="form-label" for="name">Ім'я</label>
+                  <input class="form-input" type="text" name="username" id="name"/>
+                  <svg class="icon" width="12" height="12">
+                    <use href="./images/icons.svg#icon-name"></use>
+                  </svg>
+              </div>
+              <div class="form-group">
+                  <label class="form-label" for="tel">Телефон</label>
+                  <input class="form-input" type="tel" name="tel" id="tel"/>
+                  <svg class="icon " width="13" height="13">
+                    <use href="./images/icons.svg#icon-tel"></use>
+                  </svg>
+              </div>
+              <div class="form-group">
+                  <label class="form-label" for="email">Пошта</label>
+                  <input class="form-input" type="email" name="mail" id="email"/>
+                  <svg class="icon " width="15" height="12">
+                    <use href="./images/icons.svg#icon-maill"></use>
+                  </svg>
               </div>
 
-              <div>
-                  <label>
-                    <input type="checkbox" name="conditions" value="conditions" />
-                    Погоджуюся з розсилкою та приймаю <span>
-                      <a href="">Умови договору</a>
+              <div class="form-group">
+                <label class="form-label" for="coment">Коментар</label>
+                <textarea 
+                  class="form-input form-message" 
+                  name="comment" 
+                  id="coment"
+                  placeholder="Введіть текст"
+                  resize="none">
+
+                </textarea>
+              </div>
+
+              <div class="form-group">
+                  <!-- <svg>
+                    <use href=""></use>
+                  </svg> -->
+                  <input class="checkbox" type="checkbox" name="conditions" />
+                  <label class="form-label checkbox-text">
+
+                    <span class="text-contract-basic">
+                      Погоджуюся з розсилкою та приймаю<span>
+                        <a class="text-contract" href="">Умови договору</a></span>
+                   </span>    
+                   
+                      <!-- <span class="checkbox-icon">
+                      <svg class="icon " width="16" height="15">
+                        <use href="./images/icons.svg#icon-icon-check-1"></use>
+                      </svg> -->
                     </span>
                   </label>
               </div>
 
-              <button type="submit">Відправити</button>
+              <button class="form-buttom" type="submit">Відправити</button>
 
-            </form>
-          </div>
+          </div> 
+        </form>
       </div>
     </div>
 
