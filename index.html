@@ -515,11 +515,56 @@
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="button-modal" data-modal-close>
-          <svg width="11" height="11">
-            <use href="./images/icons.svg#icon-modal"></use>
-          </svg>
-        </button>
+
+      <button type="button" class="button-modal" data-modal-close>
+        <svg width="11" height="11">
+          <use href="./images/icons.svg#icon-modal"></use>
+        </svg>
+      </button>
+
+          <div class="form-modal">
+            <form name="call_back">
+              <h2>Залиште свої дані, ми вам передзвонимо</h2>
+
+              <div>
+                  <label>
+                    Ім'я
+                    <input type="text" name="username" />
+                  </label>
+              </div>
+              <div>
+                  <label>
+                    Телефон
+                    <input type="tel" name="tel" />
+                  </label>
+              </div>
+              <div>
+                  <label>
+                    Пошта
+                    <input type="email" name="mail" />
+                  </label>
+              </div>
+
+              <div>
+                <label>
+                  Пошта
+                  <textarea name="comment" placeholder="Введіть текст"></textarea>
+                </label>
+              </div>
+
+              <div>
+                  <label>
+                    <input type="checkbox" name="conditions" value="conditions" />
+                    Погоджуюся з розсилкою та приймаю <span>
+                      <a href="">Умови договору</a>
+                    </span>
+                  </label>
+              </div>
+
+              <button type="submit">Відправити</button>
+
+            </form>
+          </div>
       </div>
     </div>
 

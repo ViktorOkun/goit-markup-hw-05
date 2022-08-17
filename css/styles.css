@@ -716,9 +716,6 @@ img {
 }
 
 .modal {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-start;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -736,6 +733,7 @@ img {
 
 .button-modal {
     margin-top: 8px;
+    margin-left: 520px;
     margin-right: 8px;
     border-radius: 50px;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -743,3 +741,7 @@ img {
     cursor: pointer;
 }
 
+.form-modal {
+    /* padding: 20px;
+    margin: 20px; */
+}
